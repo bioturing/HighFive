@@ -28,7 +28,7 @@ namespace HighFive {
 ///
 enum class PropertyType : int {
     OBJECT_CREATE,
-    FILE_CREATE,
+    FILE_CREATE_H5,
     FILE_ACCESS,
     DATASET_CREATE,
     DATASET_ACCESS,
@@ -89,7 +89,7 @@ class PropertyList: public PropertyListBase {
 };
 
 using ObjectCreateProps = PropertyList<PropertyType::OBJECT_CREATE>;
-using FileCreateProps = PropertyList<PropertyType::FILE_CREATE>;
+using FileCreateProps = PropertyList<PropertyType::FILE_CREATE_H5>;
 using FileAccessProps = PropertyList<PropertyType::FILE_ACCESS>;
 using DataSetCreateProps = PropertyList<PropertyType::DATASET_CREATE>;
 using DataSetAccessProps = PropertyList<PropertyType::DATASET_ACCESS>;
