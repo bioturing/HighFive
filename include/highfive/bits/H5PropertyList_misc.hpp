@@ -20,7 +20,7 @@ inline hid_t convert_plist_type(PropertyType propertyType) {
     switch (propertyType) {
     case PropertyType::OBJECT_CREATE:
         return H5P_OBJECT_CREATE;
-    case PropertyType::FILE_CREATE:
+    case PropertyType::FILE_CREATE_H5:
         return H5P_FILE_CREATE;
     case PropertyType::FILE_ACCESS:
         return H5P_FILE_ACCESS;
